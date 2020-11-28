@@ -25,10 +25,10 @@ public class OpenBrowser {
 
 	public static void getBrowserForWindows(String browser) {
 		if (browser.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "./src/test/resources/Drivers/win/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "/Users/ibrahimmiah/eclipse-workspace/Coparations_git/Drivers/chromedriver");
 			dr = new ChromeDriver();
 		} else if (browser.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "./src/test/resources/Drivers/win/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "/Users/ibrahimmiah/eclipse-workspace/Coparations_git/Drivers/geckodriver");
 			dr = new FirefoxDriver();
 		} else {
 			System.out.println(
@@ -38,10 +38,10 @@ public class OpenBrowser {
 
 	public static void getBrowserForMac(String browser) {
 		if (browser.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "./src/test/resources/Drivers/mac/chromedriver");
+			System.setProperty("webdriver.chrome.driver", ".Users/ibrahimmiah/eclipse-workspace/Coparations_git/Drivers/chromedriver");
 			dr = new ChromeDriver();
 		} else if (browser.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "./src/test/resources/Drivers/mac/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "/Users/ibrahimmiah/eclipse-workspace/Coparations_git/Drivers/geckodriver");
 			dr = new FirefoxDriver();
 		} else {
 			System.out.println(
