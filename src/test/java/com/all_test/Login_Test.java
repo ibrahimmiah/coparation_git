@@ -5,9 +5,7 @@ import org.testng.annotations.Test;
 
 import com.base_git.OpenBrowser;
 import com.osa.properties.App;
-import com.utility.Utilities;
-
-public class Login_Test {
+ class Login_Test {
 	
 	public WebDriver dr;
 	@Test
@@ -15,7 +13,7 @@ public class Login_Test {
 	dr=	OpenBrowser.openBrowser(browser);
 		dr.get(App.URL);
 		
-		
+		dr.get("");
 		
 	}
 	
